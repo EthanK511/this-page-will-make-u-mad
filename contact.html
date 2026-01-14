@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Claim Your $1,000,000 Grant!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="success-nav">
+        <div class="nav-item"><a href="index.html">Home</a></div>
+        <div class="nav-item"><a href="about.html">About</a></div>
+        <div class="nav-item"><a href="faq.html">FAQ</a></div>
+        <div class="nav-item"><a href="contact.html" class="active-link">Contact Us ✨</a></div>
+    </nav>
+
+    <header class="success-header">
+        <h1>🎉 YOU FOUND IT! 🎉</h1>
+        <p class="tagline">Welcome to the Contact Us Page!</p>
+    </header>
+
+    <main class="container">
+        <section class="victory-section">
+            <div class="confetti-box">
+                <h2>CONGRATULATIONS!</h2>
+                <p>You successfully navigated the maze of misleading navigation and cryptic clues!</p>
+                <p class="achievement">Achievement Unlocked: Contact Page Detective 🔍</p>
+            </div>
+        </section>
+
+        <section class="real-contact">
+            <h3>Actually Contact Us</h3>
+            <p>While your $1,000,000 grant is unfortunately fictional, this contact form is NOT. Feel free to reach out:</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us how you figured out this puzzle!" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <p id="form-response"></p>
+        </section>
+
+        <section class="puzzle-revealed">
+            <h3>🎭 The Prank Revealed</h3>
+            <p><strong>This entire site was a playful prank.</strong></p>
+            <p>The puzzle was designed to be tricky but solvable by anyone who:</p>
+            <ul>
+                <li>✓ Noticed the "Contact Us" link was missing from navigation</li>
+                <li>✓ Read the subtle hints throughout the pages</li>
+                <li>✓ Checked the browser console (clues left in console logs)</li>
+                <li>✓ Found the word "CONTACT" repeatedly mentioned in clues</li>
+                <li>✓ Tried typing "contact.html" directly in the URL</li>
+                <li>✓ Or simply guessed the obvious page name!</li>
+            </ul>
+            <p>The real prize is the journey, not the destination. (And maybe a good laugh! 😄)</p>
+        </section>
+
+        <section class="how-you-found-us">
+            <h3>How Did You Find This Page?</h3>
+            <p>If you want to share your method, leave a message in the contact form above. We'd love to know your approach!</p>
+            <ul>
+                <li>Did you inspect the HTML?</li>
+                <li>Did you check the browser console?</li>
+                <li>Did you read all the hints?</li>
+                <li>Did you just guess "contact.html"?</li>
+                <li>Did someone spoil it for you?</li>
+            </ul>
+        </section>
+
+        <section class="easter-egg-final">
+            <h3>🥚 Final Easter Egg</h3>
+            <p>You made it this far. Here's something special:</p>
+            <p class="secret-message">You're awesome. Thanks for playing our prank.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Grant Central © 2024 | Mission Accomplished! 🚀</p>
+        <p class="footer-message">This was a work of fiction. No real grants were promised. Much fun was had.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Form submission (in a real scenario, this would send data to a server)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            document.getElementById('form-response').innerHTML = `
+                <div class="success-message">
+                    <p>Thanks for your message, ${name}!</p>
+                    <p>In a real application, your message would be sent to our team.</p>
+                    <p>For now, enjoy knowing you conquered the prank! 🎉</p>
+                </div>
+            `;
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+</body>
+</html>

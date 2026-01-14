@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Grant Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="misleading-nav">
+        <div class="nav-item"><a href="index.html">Home</a></div>
+        <div class="nav-item"><a href="faq.html">FAQ</a></div>
+        <div class="nav-item"><a href="terms.html">Terms</a></div>
+    </nav>
+
+    <header class="dramatic-header">
+        <h1>About Grant Central</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h3>Our Story</h3>
+            <p>Grant Central was founded on the principle that giving away money is fun. We started our company yesterday (or was it last week?) and we've been giving away grants ever since.</p>
+
+            <h3>Our Mission</h3>
+            <p>To find clever people who can navigate a confusing website and reward them with the ultimate prize: <strong>the satisfaction of reaching our Contact Us page</strong>.</p>
+
+            <h3>Our Team</h3>
+            <ul>
+                <li><strong>CEO:</strong> Someone named "GrantMaster"</li>
+                <li><strong>CTO:</strong> A mysterious figure known only as "The Puzzle Designer"</li>
+                <li><strong>Head of Contact Info:</strong> Hiding (you'll understand soon)</li>
+            </ul>
+        </section>
+
+        <section class="color-puzzle">
+            <h3>Color-Based Puzzle</h3>
+            <p>Each color below represents a letter. Find the hidden word:</p>
+            <div class="color-box" style="background-color: #FF6B6B;">C</div>
+            <div class="color-box" style="background-color: #4ECDC4;">O</div>
+            <div class="color-box" style="background-color: #FFE66D;">N</div>
+            <div class="color-box" style="background-color: #95E1D3;">T</div>
+            <div class="color-box" style="background-color: #F38181;">A</div>
+            <div class="color-box" style="background-color: #AA96DA;">C</div>
+            <div class="color-box" style="background-color: #FCBAD3;">T</div>
+            <p class="puzzle-answer">(It spells: CONTACT)</p>
+        </section>
+
+        <section class="interactive-clue">
+            <h3>Interactive Clue</h3>
+            <p>Click the button below to reveal something interesting:</p>
+            <button onclick="revealClue()" class="reveal-btn">Reveal Hidden Message</button>
+            <p id="hidden-message"></p>
+        </section>
+
+        <section class="password-zone">
+            <h3>Secret Section</h3>
+            <p>If you can figure out the password for this site, you'll get a direct link to the contact page.</p>
+            <input type="password" id="password-input" placeholder="Hint: It's a word mentioned A LOT on this site...">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="password-response"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Grant Central © 2024 | About Us, Authentically Vague</p>
+        <p class="hint-footer">The word "CONTACT" has been mentioned in every hint on this page. Maybe the URL is... obvious?</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
